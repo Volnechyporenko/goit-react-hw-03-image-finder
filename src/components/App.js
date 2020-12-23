@@ -61,7 +61,7 @@ class App extends Component {
     }
   }
   closeModal = () => {
-    this.setState(({ showModal }) => ({ showModal: !showModal }));
+    this.setState(({ showModal }) => ({ showModal: false, modalImage: {} }));
   };
   onImageClick = image => {
     this.setState({ modalImage: image, showModal: true });
